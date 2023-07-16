@@ -7,9 +7,14 @@ import * as converter from "number-to-words";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+  title = 'The one!';
   numberInWords = '';
-  constructor() { }
+  myScriptElement: HTMLScriptElement;
+
+  constructor() {
+    this.myScriptElement = document.createElement("script");
+    this.myScriptElement.src = "./assets/matrixBackGround.js";
+  }
   convertArabicNumberToEnglishPhrase(item : any) {
     this.numberInWords = converter.toWords(item);
   }
