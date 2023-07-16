@@ -7,7 +7,7 @@ import * as converter from "number-to-words";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'The one!';
+  title = 'The one conversion app';
   numberInWords = '';
   myScriptElement: HTMLScriptElement;
 
@@ -16,6 +16,13 @@ export class AppComponent {
     this.myScriptElement.src = "./assets/matrixBackGround.js";
   }
   convertArabicNumberToEnglishPhrase(item : any) {
-    this.numberInWords = converter.toWords(item);
+    try {
+      this.numberInWords = converter.toWords(item);
+    } catch (e: any){
+      console.log(e);
+    } finally {
+      console.log('finally');
+    }
+
   }
 }
