@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import * as converter from "number-to-words";
 
 @Component({
   selector: 'app-root',
@@ -7,9 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'my-app';
-  number = '';
+  numberInWords = '';
   constructor() { }
   convertArabicNumberToEnglishPhrase(item : any) {
-    this.number = item;
+    this.numberInWords = converter.toWords(item);
   }
 }

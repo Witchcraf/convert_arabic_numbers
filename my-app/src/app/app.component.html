@@ -427,7 +427,7 @@
   <div class="card-container">
     <input #arabicNumber type="text" placeholder="Enter an arabic number">
     <button (click)="convertArabicNumberToEnglishPhrase(arabicNumber.value)">Convert</button>
-    <app-child [data]="number"></app-child>
+    <app-child [data]="numberInWords"></app-child>
   </div>
 
   <!-- Terminal -->
