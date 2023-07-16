@@ -8,11 +8,11 @@ For example:
 <pre>
 7       === seven
 42      === forty-two
-1999    === one thousand nine hundred and ninety-nine
-2001    === two thousand and one
-17999   === seventeen thousand nine hundred and ninety-nine
-342251  === three hundred and forty-two thousand two hundred and fifty-one
-1300420 === one million three hundred thousand four hundred and twenty
+1999    === one thousand nine hundred ninety-nine
+2001    === two thousand one
+17999   === seventeen thousand nine hundred ninety-nine
+342251  === three hundred forty-two thousand two hundred fifty-one
+1300420 === one million three hundred thousand four hundred twenty
 </pre>
 
 Note: Numbers greater than 100 and less than 1000 always include the word "and" between the hundreds figure and the other part, numbers greater than 1000 include "and" between any hundreds figure and the figure less than 100.

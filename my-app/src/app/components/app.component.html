@@ -424,6 +424,12 @@
     </button>
   </div>
 
+  <div class="card-container">
+    <input #arabicNumber type="text" placeholder="Enter an arabic number">
+    <button (click)="convertArabicNumberToEnglishPhrase(arabicNumber.value)">Convert</button>
+    <app-child [data]="numberInWords"></app-child>
+  </div>
+
   <!-- Terminal -->
   <div class="terminal" [ngSwitch]="selection.value">
       <pre *ngSwitchDefault>ng generate component xyz</pre>
