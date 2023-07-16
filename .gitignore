@@ -16,6 +16,10 @@ bower_components/
 # IDEs and editors
 .idea/
 
+# file: ~/.gitignore_global
+.DS_Store
+.idea
+
 # misc
 .sass-cache/
 connect.lock/
