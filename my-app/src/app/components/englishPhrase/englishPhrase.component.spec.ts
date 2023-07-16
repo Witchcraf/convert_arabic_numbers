@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ChildComponent } from './child.component';
+import { EnglishPhraseComponent } from './englishPhrase.component';
 
 describe('ChildComponent', () => {
-  let component: ChildComponent;
-  let fixture: ComponentFixture<ChildComponent>;
+  let component: EnglishPhraseComponent;
+  let fixture: ComponentFixture<EnglishPhraseComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ChildComponent]
+      declarations: [EnglishPhraseComponent]
     });
-    fixture = TestBed.createComponent(ChildComponent);
+    fixture = TestBed.createComponent(EnglishPhraseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
